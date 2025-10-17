@@ -51,6 +51,14 @@
           type="number"
         ></el-input>
       </el-form-item>
+      <el-form-item label="语文成绩">
+        <el-input 
+          v-model="form.englishScore" 
+          placeholder="请输入语文单科成绩" 
+          type="number"
+        ></el-input>
+      </el-form-item>
+
 
       <!-- 提交按钮 -->
       <el-form-item>
