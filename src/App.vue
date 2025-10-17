@@ -57,6 +57,9 @@
         <el-button type="primary" @click="submitForm">查询可报考院校</el-button>
       </el-form-item>
     </el-form>
+
+    <!-- 新增：分数匹配结果组件 -->
+    <ScoreMatch />
   </div>
 </template>
 
@@ -65,6 +68,8 @@
 import { ref } from 'vue'
 // 引入Element Plus的消息提示组件
 import { ElMessage } from 'element-plus'
+// 导入分数匹配组件
+import ScoreMatch from './components/ScoreMatch.vue';
 
 // 表单数据：响应式变量，用户输入的内容会存在这里
 const form = ref({
